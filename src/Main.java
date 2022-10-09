@@ -35,9 +35,8 @@ public class Main {
             //Задача 4
             int mec = 0;
             double percent = 0.07;
-            for (double money = 15000; money < 12_000_000; ) {
+            for (double money = 15000; money < 12_000_000; mec++) {
                 money = money * (1 + percent);
-                mec++;
                 System.out.println("Месяц " + mec + " накоплений " + money);
             }
             //Задача 4
@@ -67,18 +66,18 @@ public class Main {
             System.out.println(" ");
             System.out.println("Задача 6");
             int number = 5;
-            for (int mecyac = 5; mecyac < 31; mecyac++) {
+            for (int mecyac = 1; mecyac < 31; mecyac++) {
                 if (mecyac % 7 == 0) {
                     System.out.println("Сегодня пятница, " + (number - 2) + "-е число. Пора готовить отчёт.");
                 }
             }
 
             //Задача 7
-            int odin = 1822;
-            int dwa = 2122;
-            for (; odin < dwa; odin++) {
-                if (odin % 79 == 0) {
-                    System.out.println(odin);
+            int perviGod = 1822;
+            int posledniyGod = 2122;
+            for (; perviGod < posledniyGod; perviGod++) {
+                if (perviGod % 79 == 0) {
+                    System.out.println(perviGod);
                 }
 
                 //Задача 8
@@ -86,10 +85,7 @@ public class Main {
                 int plus = 0;
                 for (int b = 1; b <= 10; b++) {
                     plus = a * b;
-                    System.out.print("2 * ");
-                    System.out.print(b);
-                    System.out.print(" = ");
-                    System.out.println(plus + " ");
+                    System.out.print("2 * " + b + " = " + plus + " ");
                 }
             }
         }
