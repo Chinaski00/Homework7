@@ -68,7 +68,7 @@ public class Main {
             int number = 5;
             for (int mecyac = 1; mecyac < 31; mecyac++) {
                 if (mecyac % 7 == 0) {
-                    System.out.println("Сегодня пятница, " + (number - 2) + "-е число. Пора готовить отчёт.");
+                    System.out.println("Сегодня пятница, " + (mecyac - 2) + "-е число. Пора готовить отчёт.");
                 }
             }
 
@@ -85,7 +85,7 @@ public class Main {
                 int plus = 0;
                 for (int b = 1; b <= 10; b++) {
                     plus = a * b;
-                    System.out.print("2 * " + b + " = " + plus + " ");
+                    System.out.println("2 * " + b + " = " + plus + " ");
                 }
             }
         }
